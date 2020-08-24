@@ -5,9 +5,9 @@ This program uses **regex** and **ezsheets** modules to extract email from a spr
 ---
 To use this program visit these web pages and Enable the API:
 
-1.[google-api]( https://console.developers.google.com/apis/library/sheets.googleapis.com/)
+1.[google-drive-api]( https://console.developers.google.com/apis/library/sheets.googleapis.com/)
 
-2.[google-api]( https://console.developers.google.com/apis/library/drive.googleapis.com/)
+2.[google-drive-api]( https://console.developers.google.com/apis/library/drive.googleapis.com/)
 
 ---
 You’ll also need to obtain three files, which you should save in the same
@@ -37,3 +37,7 @@ import ezsheets
 ```
 The first time you import the EZSheets module, it will open a new
 browser window for you to log in to your Google account. **Click Allow**.
+
+---
+Documentation from the book:
+[Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
