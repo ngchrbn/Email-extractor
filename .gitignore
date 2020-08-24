@@ -1,0 +1,8 @@
+# Enviroments
+.venv/
+
+# Pickle extension
+*.pickle
+
+# json credentials extension
+*.json
