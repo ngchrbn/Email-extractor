@@ -21,7 +21,7 @@ folder as your .py Python script that uses EZSheets:
 
 The credentials file will generate the token files. The easiest way to
 obtain a credentials file is to go to the Google Sheets Python Quickstart
-page at [google-api](https://developers.google.com/sheets/api/quickstart/python/) and click the
+page at [google-drive-api](https://developers.google.com/sheets/api/quickstart/python/) and click the
 blue **Enable the Google Sheets API** button
 
 Clicking this button will bring up a window with a **Download Client
