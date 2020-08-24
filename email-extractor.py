@@ -4,7 +4,7 @@
 import ezsheets
 import re
 
-spreadsheet = ezsheets.Spreadsheet('Insert here th url, id, or name of the sheet')
+spreadsheet = ezsheets.Spreadsheet('Insert here the url, id, or name of the spread sheet')
 
 email_regex = re.compile(r'''(
     [a-zA-Z0-9._%+-]+   # username
@@ -13,9 +13,12 @@ email_regex = re.compile(r'''(
     (\.[a-zA-Z]{2,4})   # dot-something
     )''', re.VERBOSE)
 
-list_of_email = []
-for group in email_regex.findall(str(spreadsheet[0].getRows())):
-    list_of_email.append(group[0])
+list_of_emails = []      # Store the emails from the sheet
 
-for email in list_of_email:
+# Find all the emails in the sheet and store them
+for group in email_regex.findall(str(spreadsheet[0].getRows())):
+    list_of_emails.append(group[0])
+
+# Print the email found
+for email in list_of_emails:
     print(email)
